@@ -1,0 +1,33 @@
+//.navbar{
+//  background-color: $primary-color;
+//}
+.toolbar{
+  box-sizing: border-box;
+  height: 8%;
+  padding: 10px;
+  background-color: #225E00;
+  position: sticky;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  .logoImg{
+    height: 100%;
+  }
+}
+.menu{
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  height: 8%;
+  padding: 10px;
+  position: sticky;
+}
+
+.searchBar{
+  background-color: transparent;
+  margin: 10px;
+  width: 100%;
+}
+mat-label{
+  color: white;
+  font-weight: lighter;
+}

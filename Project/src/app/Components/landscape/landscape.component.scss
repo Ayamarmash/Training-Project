@@ -1,0 +1,73 @@
+@import "../../../assets/_theme";
+.landscape {
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+  display: flex;
+}
+.content {
+  width: 20%;
+  height: fit-content;
+  min-width: fit-content;
+  display: flex;
+  align-content: start;
+  flex-flow: column;
+  margin: 50px;
+  margin-top: 200px;
+}
+.content {
+  .subTitle,
+  .mainTitle,
+  .intro {
+  font-family: Tahoma;
+  color: $primary-color;
+    margin: 5px;
+  }
+
+
+  .mainTitle{
+    font-size: calc(2.5vw + 2vh)
+  }
+  .subTitle{
+    font-weight: lighter;
+    font-size: calc(2vw + 1.5vh)
+  }
+  .intro{
+    max-width: 430px;
+    font-size: calc(1vw + 0.5vh)
+  }
+  .divider{
+    background-color: $primary-color;
+    height: 2.5px;
+    width: 70%;
+    margin: 15px;
+  }
+  .buttons{
+    display: flex;
+    flex-flow: row;
+    width:50%;
+    padding-top: 30px;
+    .mainBtn{
+      width: 70%;
+      padding: 20px;
+      padding-left: 40px;
+      padding-right: 40px;
+    }
+    .iconBtn{
+      width: 30%;
+      padding: 20px;
+    }
+  }
+}
+
+
+@media (max-width: 920px) {
+  .content{
+    background-color: rgba(255, 255, 255, 0.67);
+  }
+  .content{
+    .intro{
+      font-size: calc(1.5vw + 1vh)
+    }
+  }
+}

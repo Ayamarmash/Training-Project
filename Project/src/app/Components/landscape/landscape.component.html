@@ -1,0 +1,14 @@
+<div class="landscape" [ngStyle]="{'background-image': 'url(' + backgroundPath + ')'}">
+  <div class="content">
+    <h1 class="mainTitle">{{mainTitle | uppercase}}</h1>
+    <h2 class="subTitle">{{subTitle}}</h2>
+    <div class="divider"></div>
+    <p class="intro">{{intro}}</p>
+    <div class="buttons">
+    <button class="mainBtn">{{buttonTitle | uppercase}}</button>
+    <button class="material-symbols-outlined iconBtn">
+        arrow_back
+    </button>
+    </div>
+  </div>
+</div>
