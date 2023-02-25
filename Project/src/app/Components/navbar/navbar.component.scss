@@ -21,13 +21,16 @@
   padding: 10px;
   position: sticky;
 }
-
-.searchBar{
+mat-form-field{
   background-color: transparent;
-  margin: 10px;
+}
+.searchBar{
   width: 100%;
 }
 mat-label{
   color: white;
   font-weight: lighter;
+}
+button{
+  background-color: transparent;
 }
