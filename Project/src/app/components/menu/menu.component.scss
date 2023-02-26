@@ -1,0 +1,21 @@
+@import "../../../assets/_theme";
+.menu{
+  background-color: #FFFFFF;
+  box-sizing: border-box;
+  height: 8%;
+  padding: 10px;
+  position: sticky;
+}
+.choices{
+  display: flex;
+  justify-content: center;
+  button{
+    background-color: transparent;
+    margin-left: 30px;
+    a{
+      text-decoration: none;
+      color: $primary-color;
+      font-size: large;
+    }
+  }
+}

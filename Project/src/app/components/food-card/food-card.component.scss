@@ -1,0 +1,32 @@
+@import "../../../assets/_theme";
+.container, .mainInfo{
+  display: flex;
+  flex-direction: row;
+  color: $primary_color;
+  justify-content: space-between;
+}
+
+.container{
+  padding: 30px;
+}
+.mainInfo{
+  h1{
+    font-size: calc(1.5vw + 2vh);
+  }
+}
+
+.content{
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin-left: 50px;
+}
+.buyBtn{
+  width: 25%;
+  padding: 15px 30px;
+  margin-top: 30px;
+}
+
+.img{
+  margin-right: 50px;
+}

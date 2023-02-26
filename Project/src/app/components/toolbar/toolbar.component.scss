@@ -1,0 +1,50 @@
+@import "../../../assets/_theme";
+.toolbar{
+  box-sizing: border-box;
+  height: 10%;
+  padding: 10px;
+  background-color: $primary-color;
+  position: sticky;
+  display: flex;
+  flex-flow: row;
+  justify-content: space-between;
+  .logoImg{
+    height: 90%;
+  }
+}
+
+mat-label{
+  color: white;
+  font-weight: 200;
+}
+
+button{
+  background-color: transparent;
+  font-weight: 200;
+  font-size: medium;
+}
+
+.section1 , .section3{
+  padding: 10px;
+}
+
+.section3{
+  display: flex;
+  flex-flow: row;
+}
+
+.mat-badge-content{
+  background-color: #608b14;
+  font-size: x-small;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 20px;
+  height: 20px;
+  position: relative;
+  top: -35px;
+  left: 20px;
+}
+
+

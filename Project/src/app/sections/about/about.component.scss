@@ -1,0 +1,7 @@
+.articles{
+  display: flex;
+  flex-direction: column;
+  > *:not(:last-child){
+    margin-bottom: 100px;
+  }
+}

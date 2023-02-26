@@ -1,0 +1,4 @@
+<app-general-section Title="service"></app-general-section>
+<div class="foodCards" *ngFor="let item of foodList">
+  <app-food-card FoodName="{{item.FoodName}}" FoodImg="{{item.FoodImg}}" FoodPrice="{{item.FoodPrice}}"></app-food-card>
+</div>

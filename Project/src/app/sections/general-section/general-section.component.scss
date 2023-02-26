@@ -1,0 +1,33 @@
+@import "../../../assets/theme";
+
+.container{
+  height: 50vh;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  justify-content: center;
+  h1{
+    font-family: Tahoma;
+    margin: 0;
+  }
+  .backCopy{
+    z-index: 0;
+    font-size: calc(4vw + 4vh);
+    color: #e2e7d9;
+    position: relative;
+  }
+  .mainTitle{
+    color: $primary_color;
+    font-size: calc(2.5vw + 2vh);
+    z-index: 1;
+    position: relative;
+    top: 25%;
+    font-weight: lighter;
+  }
+  p{
+    max-width: 50%;
+    font-size: calc(1vw + 0.5vh);
+    text-align: center;
+    color: $primary-color;
+  }
+}

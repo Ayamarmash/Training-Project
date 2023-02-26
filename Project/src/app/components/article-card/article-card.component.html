@@ -1,0 +1,21 @@
+<div class="container" [ngClass]="{'left': left, 'right' : !left}">
+  <div class="content">
+    <h1>
+      {{Title}}
+    </h1>
+    <p>
+      {{Intro}}
+    </p>
+    <div class="buttons">
+      <button class="mainBtn">READ MORE</button>
+      <button class="material-symbols-outlined iconBtn">
+        arrow_back
+      </button>
+    </div>
+  </div>
+
+  <div class="video">
+    <iframe width="600" height="480" src="https://www.youtube.com/embed/S9avbQN7Gvw">
+    </iframe>
+  </div>
+</div>

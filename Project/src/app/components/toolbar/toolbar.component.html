@@ -1,0 +1,33 @@
+<div class="toolbar">
+
+  <div class="section1">
+    <mat-form-field>
+      <mat-label>Search here</mat-label>
+      <input class="searchBar" matInput name= "search" [(ngModel)]= "search">
+      <button matSuffix mat-button><mat-icon>search</mat-icon></button>
+    </mat-form-field>
+  </div>
+
+  <div class="section2">
+    <img src="{{logoSrc}}" class="logoImg"/>
+  </div>
+
+  <div class="section3">
+
+    <button class="">Register / Login</button>
+
+    <button matBadge="{{favorite}}">
+      <span class="material-symbols-outlined">
+      favorite
+      </span>
+    </button>
+
+    <button matBadge="{{cart}}">
+      <span class="material-symbols-outlined">
+      shopping_cart
+      </span>
+    </button>
+
+  </div>
+
+</div>
