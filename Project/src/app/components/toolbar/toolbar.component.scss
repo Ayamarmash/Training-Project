@@ -1,16 +1,22 @@
 @import "../../../assets/_theme";
 .toolbar{
+  display: flex;
+  flex-flow: row;
+  justify-content: space-evenly;
   box-sizing: border-box;
   height: 10%;
   padding: 10px;
   background-color: $primary-color;
-  position: sticky;
-  display: flex;
-  flex-flow: row;
-  justify-content: space-between;
-  .logoImg{
-    height: 90%;
+  >*{
+    width: 33.3%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
   }
+}
+
+.logoImg{
+  height: 90%;
 }
 
 mat-label{
@@ -20,17 +26,40 @@ mat-label{
 
 button{
   background-color: transparent;
-  font-weight: 200;
-  font-size: medium;
+  font-weight: 300;
+  font-size: large;
+}
+.badge {
+  position: absolute;
+  top: -12px;
+  left: 25px;
+  background-color: $secondary-color;
+  color: white;
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 50%;
 }
 
-.section1 , .section3{
-  padding: 10px;
+.section1{
+  padding-left: 30px;
+  padding-bottom: 10px;
+}
+
+.section2{
+  justify-content: center;
 }
 
 .section3{
-  display: flex;
-  flex-flow: row;
+  justify-content: end;
+  padding-right: 30px;
+  >*{
+    margin: 10px;
+    position: relative;
+  }
+}
+
+.iconBtn{
+  height: 30%;
 }
 
 .mat-badge-content{
@@ -47,4 +76,35 @@ button{
   left: 20px;
 }
 
+.searchBar{
+  position: relative;
+  background-color: transparent;
+  color: white;
+  width: 50%;
+  height: 80%;
+  border: none;
+  border-bottom: solid white 1px;
+}
 
+.searchBar:focus{
+  outline: none;
+  border-bottom: solid rgba(255, 255, 255, 0.69) 1px;
+  .searchLabel{
+    opacity: 0.2;
+  }
+}
+
+.searchBar::placeholder{
+  color: white;
+  font-size: medium;
+  opacity: 0.8;
+}
+
+.searchBar:focus::placeholder {
+  opacity: 0.2;
+}
+
+.searchLabel{
+  position: absolute;
+  left: 17%;
+}

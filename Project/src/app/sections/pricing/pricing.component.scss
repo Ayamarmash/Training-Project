@@ -1,0 +1,15 @@
+.container{
+  background-size: cover;
+  background-position: center;
+}
+.cardsContainer{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  padding: 10px 50px 50px;
+  height: 80vh;
+  >*{
+    width: 25%;
+    margin: 20px;
+  }
+}

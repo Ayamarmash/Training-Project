@@ -1,0 +1,74 @@
+@import "../../../assets/_theme";
+.card{
+  display: flex;
+  flex-flow: column;
+  height: 100%;
+  width: 100%;
+}
+.card:hover{
+  box-shadow: #56694d 1px 1px 10px 1px;
+  scale: 1.01;
+}
+.section1{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  height: 40%;
+  background-color: #448C00;
+  color: white;
+  overflow: hidden;
+
+  >*{
+    margin: 0;
+  }
+}
+.section2{
+  height: 60%;
+  background-color: #f1f1f1;
+  color: $primary-color;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.plan{
+  font-weight: 300;
+  font-size: calc(1.5vw + 2vh);
+}
+.price{
+  font-size: calc(2vw + 2vh);
+  font-weight: 500;
+}
+.features{
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+  height: 50%;
+}
+.feature{
+  font-weight: 400;
+  font-size: calc(1vw + 1vh);
+  text-align: center;
+  margin: 5px;
+}
+.green{
+  width: 40%;
+  padding: 13px 30px;
+}
+.hotPadge{
+  position: absolute;
+  top: 20px;
+  left: 200px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: rotate(35deg);
+  width: 60%;
+  background-color: #225E00;
+}
+
+.regular{
+  display: none;
+}

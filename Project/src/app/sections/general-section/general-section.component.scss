@@ -7,7 +7,6 @@
   align-items: center;
   justify-content: center;
   h1{
-    font-family: Tahoma;
     margin: 0;
   }
   .backCopy{
@@ -21,8 +20,8 @@
     font-size: calc(2.5vw + 2vh);
     z-index: 1;
     position: relative;
-    top: 25%;
-    font-weight: lighter;
+    top: 23%;
+    font-weight: 500;
   }
   p{
     max-width: 50%;

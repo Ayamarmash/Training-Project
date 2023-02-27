@@ -20,6 +20,10 @@ import { ServiceComponent } from './sections/service/service.component';
 import {price} from "./pips/price-pipe";
 import { PricingComponent } from './sections/pricing/pricing.component';
 import {FoodCardComponent} from "./components/food-card/food-card.component";
+import { DiscountCardComponent } from './components/discount-card/discount-card.component';
+import { PricingCardComponent } from './components/pricing-card/pricing-card.component';
+import { BlogsComponent } from './sections/blogs/blogs.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +40,11 @@ import {FoodCardComponent} from "./components/food-card/food-card.component";
     ServiceComponent,
     price,
     PricingComponent,
-    FoodCardComponent
+    FoodCardComponent,
+    DiscountCardComponent,
+    PricingCardComponent,
+    BlogsComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

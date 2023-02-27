@@ -6,7 +6,7 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./toolbar.component.scss']
 })
 export class ToolbarComponent {
-  @Input() logoSrc : string = "../../../assets/images/logo.png"
+  @Input() logoSrc : string = "../../../assets/images/logo.svg"
   search: any;
   favorite: number = 1;
   cart: number = 0;

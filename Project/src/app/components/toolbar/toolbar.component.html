@@ -1,11 +1,12 @@
 <div class="toolbar">
 
   <div class="section1">
-    <mat-form-field>
-      <mat-label>Search here</mat-label>
-      <input class="searchBar" matInput name= "search" [(ngModel)]= "search">
-      <button matSuffix mat-button><mat-icon>search</mat-icon></button>
-    </mat-form-field>
+    <input placeholder="Search here" class="searchBar" id="search" [ngModel]="search"/>
+    <label for="search" class="searchLabel">
+      <span class="material-symbols-outlined">
+      search
+    </span>
+    </label>
   </div>
 
   <div class="section2">
@@ -16,13 +17,15 @@
 
     <button class="">Register / Login</button>
 
-    <button matBadge="{{favorite}}">
+    <button class="iconBtn">
+      <span class="badge">{{favorite}}</span>
       <span class="material-symbols-outlined">
       favorite
       </span>
     </button>
 
-    <button matBadge="{{cart}}">
+    <button class="iconBtn">
+      <span class="badge">{{cart}}</span>
       <span class="material-symbols-outlined">
       shopping_cart
       </span>

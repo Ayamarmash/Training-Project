@@ -1,10 +1,11 @@
 @import "../../../assets/_theme";
 .menu{
-  background-color: #FFFFFF;
-  box-sizing: border-box;
-  height: 8%;
-  padding: 10px;
   position: sticky;
+  top: 0;
+  background-color: #FFFFFF;
+  height: 8%;
+  display: flex;
+  justify-content: center;
 }
 .choices{
   display: flex;
@@ -16,6 +17,12 @@
       text-decoration: none;
       color: $primary-color;
       font-size: large;
+      font-weight: 500;
+    }
+  }
+  button:hover{
+    a{
+      color: $secondary-color;
     }
   }
 }

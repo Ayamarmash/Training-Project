@@ -4,20 +4,28 @@ html, body{
   width: 100%;
   padding: 0;
   margin: 0;
+  scroll-behavior: smooth;
 }
 button{
+  border: none;
+  color: #FFFFFF;
+}
+.green{
   min-width: fit-content;
   margin: 5px;
-  font-weight: bold;
+  font-weight: 400;
   font-size: calc(0.5vw + 1vh);
   background-color: $primary-color;
-  border:none;
-  color: #FFFFFF;
   border-radius: 25px 0 25px 0;
 }
-
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
-*{
-  font-family: Tahoma;
+.green:hover{
+  background-color: $secondary-color;
+  box-shadow: #56694d 1px 1px 10px 1px;
 }
+*{
+  font-family: Roboto;
+}
+.mainTitle{
+  font-size: calc(2.5vw + 2vh);
+}
+

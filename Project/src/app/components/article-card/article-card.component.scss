@@ -3,21 +3,23 @@
   height: 60vh;
   display: flex;
   flex-flow: row wrap;
-  padding: 30px;
+  padding: 30px 50px;
   justify-content: space-between;
 }
 .left{
   flex-direction: row-reverse;
 }
+.right{
+  flex-direction: row;
+}
 
 .content{
   width: 40%;
-  padding: 25px;
-  font-family: Tahoma;
+  padding-left: 20px;
   color: $primary_color;
   h1{
     font-size: calc(2vw + 2vh);
-    font-weight: lighter;
+    font-weight: 500;
   }
   p{
     width: 90%;
@@ -33,12 +35,35 @@
   padding-top: 30px;
   .mainBtn{
     width: 70%;
-    padding: 20px;
-    padding-left: 40px;
-    padding-right: 40px;
+    padding: 20px 40px;
   }
   .iconBtn{
     width: 30%;
     padding: 20px;
   }
 }
+.frame{
+  border-top: solid $primary-color 5px;
+  border-left: solid $primary-color 5px;
+  width: 30%;
+  height: 30%;
+  padding: 20px;
+}
+.iconBtn{
+  width: 200px;
+  padding: 20px;
+}
+//.shadow{
+//  position: relative;
+//}
+//
+//.shadow::before {
+//  content: "";
+//  position: absolute;
+//  top: 0;
+//  left: 0;
+//  width: 500px;
+//  height: 430px;
+//  background-color: rgba(67, 173, 0, 0.31);
+//  z-index: 1;
+//}

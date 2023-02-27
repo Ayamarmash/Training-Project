@@ -1,0 +1,9 @@
+<div class="card" [ngStyle]="{'background-image': 'url(' + backgroundPath + ')'}"  [ngClass]="{'left': left, 'right' : !left}">
+  <div class="content">
+    <h2 class="special">Special</h2>
+    <h1 class="mainTitle">{{mainTitle | uppercase}}</h1>
+    <h1 class="subTitle">{{subTitle | uppercase}}</h1>
+    <p class="intro">{{intro}}</p>
+    <button class="green">DISCOVER NOW</button>
+  </div>
+</div>
