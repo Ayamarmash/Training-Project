@@ -1,5 +1,35 @@
 @import "../../../assets/_theme";
 .footer{
+  display: flex;
+  flex-direction: column;
   height: 50vh;
   background-color: $primary-color;
+}
+.logoImg{
+  height: 60%;
+  width: 6%;
+}
+.logo{
+  height: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: end;
+}
+.content{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding-top: 30px;
+}
+.title , .subTitle{
+  color: white;
+  margin: 0;
+}
+.title{
+  font-weight: 500;
+  font-size: calc(1.5vw + 1.5vh);
+}
+.subTitle{
+  font-weight: 400;
 }

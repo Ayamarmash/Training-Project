@@ -24,6 +24,7 @@ import { DiscountCardComponent } from './components/discount-card/discount-card.
 import { PricingCardComponent } from './components/pricing-card/pricing-card.component';
 import { BlogsComponent } from './sections/blogs/blogs.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -52,7 +53,8 @@ import { FooterComponent } from './components/footer/footer.component';
     MatInputModule,
     FormsModule,
     MatIconModule,
-    MatBadgeModule
+    MatBadgeModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
