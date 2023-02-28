@@ -9,22 +9,30 @@ import {AddToCartFavService} from "../../services/add-to-cart-favorite-service/a
 export class FoodOrderCardComponent {
   constructor(private addToCartService : AddToCartFavService) {}
 
-  @Input() FoodImg: string = "";
-  @Input() FoodName : string = ""
-  @Input() FoodPrice : string = ""
-  @Input() Type : string = ""
+  @Input() foodImg: string = "";
+  @Input() foodName : string = ""
+  @Input() foodPrice : string = ""
+  @Input() type : string = ""
+
+  @Input() favPage : boolean = false
+
   addToCartBtn(){
     this.addToCartService.addToCart({
-      FoodName: this.FoodName,
-      FoodImg: this.FoodImg,
-      FoodPrice: this.FoodPrice
+      foodName: this.foodName,
+      foodImg: this.foodImg,
+      foodPrice: this.foodPrice,
+      type: this.type
     })
   }
   addToFavBtn(){
     this.addToCartService.addToFav({
-      FoodName: this.FoodName,
-      FoodImg: this.FoodImg,
-      FoodPrice: this.FoodPrice
+      foodName: this.foodName,
+      foodImg: this.foodImg,
+      foodPrice: this.foodPrice,
+      type: this.type
     })
+  }
+  removeFromFavBtn() {
+    this.addToCartService.removeFromFav(this.foodName)
   }
 }

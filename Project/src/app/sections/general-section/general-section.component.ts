@@ -6,7 +6,7 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./general-section.component.scss']
 })
 export class GeneralSectionComponent {
-  @Input() Title : string = "General"
-  @Input() Paragraph : string = "Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words"
+  @Input() title : string = "General"
+  @Input() paragraph : string = "Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words"
 
 }

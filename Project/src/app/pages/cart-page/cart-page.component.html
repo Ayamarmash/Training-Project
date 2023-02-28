@@ -1,6 +1,9 @@
-<app-food-card *ngFor="let item of itemsInCart"
-               FoodName="{{item.FoodName}}"
-               FoodImg="{{item.FoodImg}}"
-               FoodPrice="{{item.FoodPrice}}">
-</app-food-card>
-
+<div class="foodSection">
+  <app-food-order-card  *ngFor="let item of itemsInCart"
+                        [favPage]="true"
+                        foodImg="{{item.foodImg}}"
+                        foodName="{{item.foodName}}"
+                        foodPrice="{{item.foodPrice}}"
+                        type="{{item.type}}">
+  </app-food-order-card>
+</div>

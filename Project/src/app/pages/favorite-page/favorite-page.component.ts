@@ -8,10 +8,10 @@ import {Food} from "../../../assets/data/food-interface";
   styleUrls: ['./favorite-page.component.scss']
 })
 export class FavoritePageComponent implements OnInit{
-  constructor(private addToCartService : AddToCartFavService) {}
-
-  ngOnInit(){
-    this.itemsInFav = this.addToCartService.getItemsInFav()
-  }
   itemsInFav : Food[] = []
+
+  constructor(private addToCartFavService : AddToCartFavService) {}
+  ngOnInit(){
+    this.itemsInFav = this.addToCartFavService.getItemsInFav()
+  }
 }

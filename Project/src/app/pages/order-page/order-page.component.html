@@ -1,12 +1,11 @@
-<!--<div class="foodCards" *ngFor="let item of menuItems">-->
-<!--  <app-food-card FoodName="{{item.FoodName}}" FoodImg="{{item.FoodImg}}" FoodPrice="{{item.FoodPrice}}"></app-food-card>-->
-<!--</div>-->
-<app-general-section Title="Menu" Paragraph=""></app-general-section>
+
+
+<app-general-section title="Menu" paragraph=""></app-general-section>
 <div class="foodSection">
   <app-food-order-card  *ngFor="let item of menuItems"
-                        FoodImg="{{item.FoodImg}}"
-                        FoodName="{{item.FoodName}}"
-                        FoodPrice="{{item.FoodPrice}}"
-                        Type="{{item.Type}}">
+                        foodImg="{{item.foodImg}}"
+                        foodName="{{item.foodName}}"
+                        foodPrice="{{item.foodPrice}}"
+                        type="{{item.type}}">
   </app-food-order-card>
 </div>

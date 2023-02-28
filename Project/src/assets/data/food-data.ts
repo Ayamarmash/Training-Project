@@ -4,24 +4,65 @@ let Description = "Lorem Ipsum available, but the majority have suffered alterat
 export const FoodData : Food[] = [
 
   {
-    FoodName: "Peanut Butter",
-    Description: Description,
-    FoodPrice: "45",
-    FoodImg :"../../../assets/images/chicken.svg",
-    Type: "Sandwich"
+    foodName: "Peanut Butter",
+    description: Description,
+    foodPrice: "45",
+    foodImg :"../../../assets/images/chicken.svg",
+    type: "Sandwich"
   },
   {
-    FoodName: "Pumpkin Pie",
-    Description: Description,
-    FoodPrice: "35",
-    FoodImg :"../../../assets/images/chicken2.svg",
-    Type: "Dessert"
+    foodName: "Pumpkin Pie",
+    description: Description,
+    foodPrice: "35",
+    foodImg :"../../../assets/images/chicken2.svg",
+    type: "Dessert"
   },
   {
-    FoodName: "Jambalaya",
-    Description: Description,
-    FoodPrice: "50",
-    FoodImg :"../../../assets/images/burger.svg",
-    Type: "Dessert"
+    foodName: "Jambalaya",
+    description: Description,
+    foodPrice: "50",
+    foodImg :"../../../assets/images/burger.svg",
+    type: "Dessert"
+  },
+  {
+    foodName: "Peanut Butter",
+    description: Description,
+    foodPrice: "45",
+    foodImg :"../../../assets/images/chicken.svg",
+    type: "Sandwich"
+  },
+  {
+    foodName: "Pumpkin Pie",
+    description: Description,
+    foodPrice: "35",
+    foodImg :"../../../assets/images/chicken2.svg",
+    type: "Dessert"
+  },
+  {
+    foodName: "Jambalaya",
+    description: Description,
+    foodPrice: "50",
+    foodImg :"../../../assets/images/burger.svg",
+    type: "Dessert"
+  },  {
+    foodName: "Peanut Butter",
+    description: Description,
+    foodPrice: "45",
+    foodImg :"../../../assets/images/chicken.svg",
+    type: "Sandwich"
+  },
+  {
+    foodName: "Pumpkin Pie",
+    description: Description,
+    foodPrice: "35",
+    foodImg :"../../../assets/images/chicken2.svg",
+    type: "Dessert"
+  },
+  {
+    foodName: "Jambalaya",
+    description: Description,
+    foodPrice: "50",
+    foodImg :"../../../assets/images/burger.svg",
+    type: "Dessert"
   }
 ];

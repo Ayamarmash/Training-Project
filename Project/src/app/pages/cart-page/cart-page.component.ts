@@ -8,10 +8,10 @@ import {Food} from "../../../assets/data/food-interface";
   styleUrls: ['./cart-page.component.scss']
 })
 export class CartPageComponent  implements OnInit{
-  constructor(private addToCartService : AddToCartFavService) {}
+  constructor(private addToCartFavService : AddToCartFavService) {}
+  itemsInCart : Food[] = []
 
   ngOnInit(){
-    this.itemsInCart = this.addToCartService.getItemsInCart()
+    this.itemsInCart = this.addToCartFavService.getItemsInCart()
   }
-  itemsInCart : Food[] = []
 }

@@ -6,9 +6,9 @@ import {Component, Input} from '@angular/core';
   styleUrls: ['./food-card.component.scss']
 })
 export class FoodCardComponent {
-  @Input() FoodName : string = "Food"
+  @Input() foodName : string = "Food"
   @Input() Description : string = ""
-  @Input() FoodPrice : string = "0"
-  @Input() FoodImg : string = "../../../assets/images/chicken.svg"
+  @Input() foodPrice : string = "0"
+  @Input() foodImg : string = "../../../assets/images/chicken.svg"
   @Input() left : boolean = false
 }

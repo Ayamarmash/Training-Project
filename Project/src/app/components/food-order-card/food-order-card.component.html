@@ -1,14 +1,14 @@
 <div class="card">
-  <div class="foodImg" [ngStyle]="{'background-image': 'url(' + FoodImg + ')'}"></div>
+  <div class="food-img" [ngStyle]="{'background-image': 'url(' + foodImg + ')'}"></div>
   <div class="info">
-    <h1 class="title">{{FoodName}}</h1>
-    <h4 class="type">{{Type}}</h4>
-    <h2 class="price">{{FoodPrice | price}}</h2>
+    <h1 class="title">{{foodName}}</h1>
+    <h4 class="type">{{type}}</h4>
+    <h2 class="price">{{foodPrice | price}}</h2>
     <div class="buttons">
-    <button class="green" (click)="addToCartBtn()">Add to cart</button>
-    <button class="green iconBtn" (click)="addToFavBtn()">
+    <button class="green main-btn" (click)="addToCartBtn()">Add to cart</button>
+    <button class="green icon-btn" (click)="favPage ? removeFromFavBtn() : addToFavBtn()" ng-click="true">
       <span class="material-symbols-outlined">
-      favorite
+      {{favPage ? 'remove' : 'favorite'}}
       </span>
     </button>
     </div>

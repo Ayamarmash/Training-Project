@@ -2,7 +2,10 @@
 .footer{
   display: flex;
   flex-direction: column;
+  position: sticky;
+  bottom: 0;
   height: 50vh;
+  width: 100%;
   background-color: $primary-color;
 }
 .logoImg{

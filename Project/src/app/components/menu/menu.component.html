@@ -1,7 +1,8 @@
 <div class="menu">
   <div class="choices">
     <button *ngFor="let choice of choices">
-      <a href="#{{choice.href}}">{{ choice.choice | uppercase}}</a>
+      <a *ngIf="choice.choice === 'contact'" routerLink="/contact">{{ choice.choice | uppercase}}</a>
+      <a *ngIf="choice.choice != 'contact'" href="#{{choice.href}}">{{ choice.choice | uppercase}}</a>
     </button>
   </div>
 </div>

@@ -29,6 +29,7 @@ import { OrderPageComponent } from './pages/order-page/order-page.component';
 import { FoodOrderCardComponent } from './components/food-order-card/food-order-card.component';
 import { CartPageComponent } from './pages/cart-page/cart-page.component';
 import { FavoritePageComponent } from './pages/favorite-page/favorite-page.component';
+import { ContactPageComponent } from './pages/contact-page/contact-page.component';
 
 @NgModule({
   declarations: [
@@ -53,7 +54,8 @@ import { FavoritePageComponent } from './pages/favorite-page/favorite-page.compo
     OrderPageComponent,
     FoodOrderCardComponent,
     CartPageComponent,
-    FavoritePageComponent
+    FavoritePageComponent,
+    ContactPageComponent
   ],
   imports: [
     BrowserModule,
