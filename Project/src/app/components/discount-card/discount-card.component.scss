@@ -1,17 +1,64 @@
 @import "../../../assets/_theme";
+
 .card{
-  height: 70vh;
   display: flex;
+  align-items: center;
+
+  height: 70vh;
+  box-sizing: border-box;
+  padding: 50px;
+
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding: 50px;
-  box-sizing: border-box;
-  align-items: center;
+
+
+  .content{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    width: 50%;
+    height: 90%;
+
+    .special, .main-title , .sub-title, .intro{
+      color: $primary_color;
+    }
+
+    .special{
+      font-size: calc(1.5vw + 1vh);
+      font-weight: 500;
+      margin-bottom: 5px;
+    }
+
+    .main-title{
+      margin: 0;
+    }
+
+    .sub-title{
+      margin-top: 5px;
+      letter-spacing: 12px;
+      font-weight: 500;
+      font-size: calc(1.5vw + 1vh);
+    }
+
+    .intro{
+      font-size: calc(1vw + 0.5vh);
+      width: 80%;
+    }
+
+    .green{
+      font-size: calc(1vw + 0.2vh);
+      width: 25%;
+      padding: 20px;
+    }
+  }
+
 }
+
 .left{
   flex-direction: row;
 }
+
 .right{
   flex-direction: row-reverse;
   .content{
@@ -22,34 +69,4 @@
   }
 }
 
-.content{
-  display: flex;
-  flex-direction: column;
-  align-items: start;
-  width: 50%;
-  height: 90%;
-  .special, .mainTitle , .subTitle, .intro{
-    color: $primary_color;
-  }
-  .special{
-    font-size: calc(1.5vw + 1vh);
-    font-weight: 500;
-    margin-bottom: 5px;
-  }
-  .mainTitle{
-    margin: 0;
-  }
-  .subTitle{
-    margin-top: 5px;
-    letter-spacing: 12px;
-    font-weight: 500;
-    font-size: calc(1.5vw + 1vh);
-  }
-  .intro{
-    font-size: calc(1vw + 0.5vh);
-    width: 80%;
-  }
-  .green{
-    padding: 20px 25px 20px 25px;
-  }
-}
+

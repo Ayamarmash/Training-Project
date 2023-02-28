@@ -25,9 +25,31 @@ button{
 *{
   font-family: Roboto;
 }
-.mainTitle{
+.main-title{
   font-size: calc(2.5vw + 2vh);
 }
 app-blog-card {
   display: block;
+}
+.buttons{
+  display: flex;
+  flex-flow: row;
+  width: 35%;
+  min-width: fit-content;
+  padding-top: 30px;
+
+  .main-btn{
+    font-size: calc(1vw + 0.2vh);
+    width: 50%;
+    padding: 15px;
+  }
+
+  .icon-btn{
+    color: white;
+    width: 20%;
+    padding: 15px;
+    .material-symbols-outlined {
+      font-size: calc(1vw + 1vh);
+    }
+  }
 }

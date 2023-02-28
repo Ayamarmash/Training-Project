@@ -1,68 +1,46 @@
 @import "../../../assets/_theme";
+
 .landscape {
+  display: flex;
+  height: 100vh;
+  min-height: fit-content;
   background-size: cover;
   background-position: center;
-  height: 100vh;
-  display: flex;
-}
-.content {
-  width: 20%;
-  height: fit-content;
-  min-width: fit-content;
-  display: flex;
-  align-content: start;
-  flex-flow: column;
-  margin: 200px 50px 50px;
-}
-.subTitle,
-.mainTitle,
-.intro {
-  color: $primary-color;
-  margin: 5px;
-}
 
-.subTitle{
-  font-weight: lighter;
-  font-size: calc(2vw + 1.5vh)
-}
+  .content {
+    display: flex;
+    flex-flow: column;
+    align-content: start;
+    margin: 200px 50px 50px;
 
-.intro{
-  max-width: 430px;
-  font-size: calc(1vw + 0.5vh)
-}
+    width: 20%;
+    height: fit-content;
+    min-width: fit-content;
 
-.divider{
-  background-color: $primary-color;
-  height: 2.5px;
-  width: 70%;
-  margin: 15px;
-}
+    .sub-title,
+    .main-title,
+    .intro {
+      color: $primary-color;
+      margin: 5px;
+    }
 
-.buttons{
-  display: flex;
-  flex-flow: row;
-  width:50%;
-  padding-top: 30px;
-}
+    .sub-title{
+      font-weight: lighter;
+      font-size: calc(2vw + 1.5vh)
+    }
 
-.mainBtn{
-  width: 70%;
-  padding: 20px 40px;
-}
-
-.iconBtn{
-  width: 200px;
-  padding: 20px;
-}
-
-
-@media (max-width: 920px) {
-  .content{
-    background-color: rgba(255, 255, 255, 0.67);
-  }
-  .content{
     .intro{
-      font-size: calc(1.5vw + 1vh)
+      max-width: 40%;
+      font-size: calc(1vw + 0.5vh)
     }
   }
+
+  .divider{
+    background-color: $primary-color;
+    height: 2.5px;
+    width: 40%;
+    margin: 15px;
+  }
+
+
 }

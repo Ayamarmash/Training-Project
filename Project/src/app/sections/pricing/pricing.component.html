@@ -1,6 +1,6 @@
-<app-discount-card></app-discount-card>
+<div class="section-container">
 <app-general-section Title="Pricing"></app-general-section>
 <div class="cardsContainer">
   <app-pricing-card *ngFor="let plan of plans" plan="{{plan.plan}}" price="{{plan.price}}" [isHot]="plan.isHot"></app-pricing-card>
 </div>
-<app-discount-card backgroundPath="../../../assets/images/discount2.svg" [left]="false"></app-discount-card>
+</div>

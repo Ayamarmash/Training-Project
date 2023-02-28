@@ -1,32 +1,48 @@
 @import "../../../assets/theme";
 
 .container{
-  height: 50vh;
   display: flex;
   flex-flow: column;
   align-items: center;
   justify-content: center;
+  height: 50vh;
+  max-width: 1440px;
+
+  .title{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    h1{
+      margin: 0;
+    }
+
+    .back-copy{
+      position: relative;
+      z-index: 0;
+      font-size: calc(4vw + 4vh);
+      color: #e2e7d9;
+    }
+
+    .front-copy{
+      position: absolute;
+      z-index: 1;
+      font-size: calc(2.5vw + 2vh);
+      color: $primary_color;
+      font-weight: 500;
+    }
+  }
+
+  p{
+    max-width: 50%;
+    font-size: calc(1vw + 0.5vh);
+    text-align: center;
+    color: $primary-color;
+  }
 }
-h1{
-  margin: 0;
-}
-.backCopy{
-  z-index: 0;
-  font-size: calc(4vw + 4vh);
-  color: #e2e7d9;
-  position: relative;
-}
-.mainTitle{
-  color: $primary_color;
-  font-size: calc(2.5vw + 2vh);
-  z-index: 1;
-  position: relative;
-  top: 23%;
-  font-weight: 500;
-}
-p{
-  max-width: 50%;
-  font-size: calc(1vw + 0.5vh);
-  text-align: center;
-  color: $primary-color;
-}
+
+
+
+
+
+

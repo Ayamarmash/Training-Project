@@ -1,25 +1,35 @@
 @import "../../../assets/_theme";
+
 .menu{
-  position: sticky;
-  top: 0;
-  background-color: #FFFFFF;
-  height: 8%;
   display: flex;
+  position: sticky;
   justify-content: center;
+  top: 0;
+
+  height: 8%;
+  min-height: fit-content;
+
+  background-color: #FFFFFF;
 }
+
 .choices{
   display: flex;
   justify-content: center;
+  min-height: fit-content;
+
   button{
     background-color: transparent;
+    min-height: fit-content;
     margin-left: 30px;
     a{
+      min-height: fit-content;
       text-decoration: none;
       color: $primary-color;
-      font-size: large;
+      font-size: calc(0.8vw + 1vh);
       font-weight: 500;
     }
   }
+
   button:hover{
     a{
       color: $secondary-color;

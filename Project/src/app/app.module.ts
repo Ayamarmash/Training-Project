@@ -4,7 +4,6 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { HomePageComponent } from './pages/home-page/home-page.component';
-import {NavbarComponent} from "./components/navbar/navbar.component";
 import { ArticleCardComponent } from './components/article-card/article-card.component';
 import { LandscapeComponent } from './components/landscape/landscape.component';
 import {AboutComponent} from "./sections/about/about.component";
@@ -34,7 +33,6 @@ import { FavoritePageComponent } from './pages/favorite-page/favorite-page.compo
 @NgModule({
   declarations: [
     AppComponent,
-    NavbarComponent,
     HomePageComponent,
     ArticleCardComponent,
     LandscapeComponent,

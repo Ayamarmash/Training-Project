@@ -3,19 +3,22 @@
   <app-landscape ></app-landscape>
 </section>
 
-<section id="about_us">
-  <app-about></app-about>
-</section>
+<div class="home-page">
+
+  <section id="about_us">
+    <app-about></app-about>
+  </section>
 
 <section id="service">
   <app-service></app-service>
 </section>
-
+  <app-discount-card></app-discount-card>
 <section id="pricing">
   <app-pricing></app-pricing>
 </section>
+  <app-discount-card backgroundPath="../../../assets/images/discount2.svg" [left]="false"></app-discount-card>
 
 <section id="blogs">
   <app-blogs></app-blogs>
 </section>
-
+</div>

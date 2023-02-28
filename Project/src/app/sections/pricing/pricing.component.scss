@@ -2,12 +2,18 @@
   background-size: cover;
   background-position: center;
 }
+.section-container{
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+}
 .cardsContainer{
   display: flex;
   flex-flow: row wrap;
   justify-content: center;
-  padding: 10px 50px 50px;
   height: 80vh;
+  width: 1440px;
+
   >*{
     width: 25%;
     margin: 20px;

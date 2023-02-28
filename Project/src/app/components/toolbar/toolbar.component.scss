@@ -76,13 +76,13 @@
   .register-btn{
     background-color: transparent;
     font-weight: 300;
-    font-size: large;
+    font-size: calc(0.8vw + 1vh);
   }
 
   .icon-btn{
+    position: relative;
     background-color: transparent;
     height: 30%;
-    position: relative;
   }
 
   .badge {
