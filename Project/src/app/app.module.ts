@@ -25,6 +25,11 @@ import { PricingCardComponent } from './components/pricing-card/pricing-card.com
 import { BlogsComponent } from './sections/blogs/blogs.component';
 import { FooterComponent } from './components/footer/footer.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { BlogCardComponent } from './components/blog-card/blog-card.component';
+import { OrderPageComponent } from './pages/order-page/order-page.component';
+import { FoodOrderCardComponent } from './components/food-order-card/food-order-card.component';
+import { CartPageComponent } from './pages/cart-page/cart-page.component';
+import { FavoritePageComponent } from './pages/favorite-page/favorite-page.component';
 
 @NgModule({
   declarations: [
@@ -45,7 +50,12 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
     DiscountCardComponent,
     PricingCardComponent,
     BlogsComponent,
-    FooterComponent
+    FooterComponent,
+    BlogCardComponent,
+    OrderPageComponent,
+    FoodOrderCardComponent,
+    CartPageComponent,
+    FavoritePageComponent
   ],
   imports: [
     BrowserModule,

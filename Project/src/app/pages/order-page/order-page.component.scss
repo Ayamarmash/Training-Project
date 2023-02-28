@@ -1,0 +1,30 @@
+@import "../../../assets/_theme";
+
+app-general-section:after {
+  position: relative;
+  left: 10%;
+  top: -10%;
+  content: "";
+  background-color: $primary-color;
+  width: 80%;
+  height: 2px;
+  display: block;
+  clear: both;
+}
+.foodSection{
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  >*{
+    flex-basis: fit-content;
+    margin: 30px;
+  }
+}
+app-food-order-card:hover{
+  scale: 1.01;
+  box-shadow: #56694d 0px 0px 10px 0px;
+}
+app-food-card{
+  min-width: fit-content;
+}

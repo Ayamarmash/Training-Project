@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 <div class="footer">
   <div class="logo">
     <img src="{{logoSrc}}" class="logoImg"/>
@@ -6,18 +7,10 @@
     <h1 class="title">{{Title | uppercase}}</h1>
     <h2 class="subTitle">{{subTitle}}</h2>
     <div class="socialAccounts">
-      <button>
-        <a href="{{instagram}}" target="_blank">t</a>
-      </button>
-      <button >
-        <a href="{{facebook}}" target="_blank">t</a>
-      </button>
-      <button >
-        <a href="{{twitter}}" target="_blank">t</a>
-      </button>
-      <button >
-        <a href="{{whatsapp}}" target="_blank">t</a>
+      <button class="social" *ngFor="let element of SocialMediaLinks">
+        <a href="{{element.link}}" class="fa fa-{{element.name}}" target="_blank"></a>
       </button>
     </div>
+    <h1 class="website">{{Website}}</h1>
   </div>
 </div>

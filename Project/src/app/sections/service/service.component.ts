@@ -1,30 +1,19 @@
-import {Component, Input} from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {DataService} from "../../services/data-service/data.service";
+import {Food} from "../../../assets/data/food-interface";
 
 @Component({
   selector: 'app-service',
   templateUrl: './service.component.html',
   styleUrls: ['./service.component.scss']
 })
-export class ServiceComponent {
-  Description = "Lorem Ipsum available, but the majority have suffered alteration in some form,Lorem Ipsum available,  by injected humour, or randomised wordsbut the majority have suffered alteration in some form,Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words"
-
-  @Input() foodList = [{
-    FoodName: "Peanut Butter",
-    Description: this.Description,
-    FoodPrice: "45",
-    FoodImg :"../../../assets/images/chicken.svg"
-  },
-    {
-      FoodName: "Pumpkin Pie",
-      Description: this.Description,
-      FoodPrice: "35",
-      FoodImg :"../../../assets/images/chicken2.svg"
-    },
-    {
-      FoodName: "Jambalaya",
-      Description: this.Description,
-      FoodPrice: "50",
-      FoodImg :"../../../assets/images/burger.svg"
-    }
-  ]
+export class ServiceComponent implements OnInit{
+  constructor(private dataService : DataService) {}
+  ngOnInit(){
+    this.getFoodData()
+  }
+  getFoodData() {
+    this.foodList = this.dataService.getFoodData()
+  }
+  foodList : Food[] | undefined
 }

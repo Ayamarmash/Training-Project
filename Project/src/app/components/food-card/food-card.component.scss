@@ -9,6 +9,9 @@
 .container{
   padding: 30px;
 }
+.left{
+  flex-direction: row-reverse;
+}
 .mainInfo{
   h1{
     font-size: calc(1.5vw + 2vh);

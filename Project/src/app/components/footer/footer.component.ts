@@ -9,8 +9,23 @@ export class FooterComponent {
   @Input() logoSrc : string = "../../../assets/images/logo.png"
   @Input() Title : string = "american food"
   @Input() subTitle : string = "The Best Taste Food"
-  @Input() instagram : string | undefined
-  @Input() facebook : string | undefined
-  @Input() twitter : string | undefined
-  @Input() whatsapp : string | undefined
+  @Input() SocialMediaLinks = [
+    {
+      name: "instagram",
+      link: ""
+    },
+    {
+      name: "facebook",
+      link: ""
+    },
+    {
+      name: "twitter",
+      link: ""
+    },
+    {
+      name: "whatsapp",
+      link: ""
+    }
+  ]
+  @Input() Website : string = "yourwebsite.com"
 }

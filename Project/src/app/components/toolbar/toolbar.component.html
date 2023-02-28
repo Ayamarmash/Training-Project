@@ -10,21 +10,21 @@
   </div>
 
   <div class="section2">
-    <img src="{{logoSrc}}" class="logoImg"/>
+    <img routerLink="/" src="{{logoSrc}}" class="logoImg"/>
   </div>
 
   <div class="section3">
 
     <button class="">Register / Login</button>
 
-    <button class="iconBtn">
+    <button class="iconBtn" routerLink="/favorite">
       <span class="badge">{{favorite}}</span>
       <span class="material-symbols-outlined">
       favorite
       </span>
     </button>
 
-    <button class="iconBtn">
+    <button class="iconBtn" routerLink="/cart">
       <span class="badge">{{cart}}</span>
       <span class="material-symbols-outlined">
       shopping_cart

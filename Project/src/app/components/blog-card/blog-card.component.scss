@@ -1,0 +1,30 @@
+@import "../../../assets/_theme";
+
+.container{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding:50px;
+  >*{
+    width: calc(33.33% - 20px);
+    margin: 20px;
+  }
+}
+.introDiv{
+  flex: 1;
+  background-color: #F1F2F2;
+  padding: 20px;
+}
+.Title{
+  color: $primary-color;
+  font-weight: 500;
+  font-size: calc(1.5vw + 2vh);
+}
+.intro{
+  color: $primary-color;
+  font-size: calc(1vw + 0.5vh);
+}
+.green{
+  width: 40%;
+  padding: 15px;
+}

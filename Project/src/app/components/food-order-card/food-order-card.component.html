@@ -1,0 +1,16 @@
+<div class="card">
+  <div class="foodImg" [ngStyle]="{'background-image': 'url(' + FoodImg + ')'}"></div>
+  <div class="info">
+    <h1 class="title">{{FoodName}}</h1>
+    <h4 class="type">{{Type}}</h4>
+    <h2 class="price">{{FoodPrice | price}}</h2>
+    <div class="buttons">
+    <button class="green" (click)="addToCartBtn()">Add to cart</button>
+    <button class="green iconBtn" (click)="addToFavBtn()">
+      <span class="material-symbols-outlined">
+      favorite
+      </span>
+    </button>
+    </div>
+  </div>
+</div>

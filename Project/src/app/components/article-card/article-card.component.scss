@@ -3,7 +3,7 @@
   height: 60vh;
   display: flex;
   flex-flow: row wrap;
-  padding: 30px 50px;
+  padding: 0px 50px;
   justify-content: space-between;
 }
 .left{
@@ -52,6 +52,16 @@
 .iconBtn{
   width: 200px;
   padding: 20px;
+}
+.video{
+  display: flex;
+  width: 40%;
+  position: relative;
+}
+iframe{
+  position: absolute;
+  left: 5%;
+  top: 5%;
 }
 //.shadow{
 //  position: relative;
