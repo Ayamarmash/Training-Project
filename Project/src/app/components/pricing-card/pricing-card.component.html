@@ -1,10 +1,10 @@
 <div class="card">
-  <div class="section1">
+  <div class="section_1">
     <div class="hotPadge" [ngClass]="{'regular': !isHot}">HOT</div>
     <h1 class="plan">{{plan}}</h1>
     <h1 class="price">{{price | price}}</h1>
   </div>
-  <div class="section2">
+  <div class="section_2">
     <div class="features">
       <h1 class="feature" *ngFor="let feature of features">{{ feature }}</h1>
     </div>
