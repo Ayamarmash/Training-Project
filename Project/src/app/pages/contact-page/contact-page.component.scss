@@ -5,18 +5,20 @@
   align-items: center;
   height: fit-content;
   >*{
-    width: 1440px;
+    width: 80%;
   }
 }
 .contact-form{
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 50px;
   height: 500px;
   min-height: fit-content;
   >*{
     display: flex;
     flex-direction: column;
-    width: 50%;
+    width: 80%;
     margin: 10px;
   }
 
@@ -35,8 +37,8 @@
 
   .btn-field{
     margin-top: 15px;
-    width: 10%;
-    height: 10%;
+    width: 15%;
+    height: 15%;
     >*{
       height: 100%;
     }
