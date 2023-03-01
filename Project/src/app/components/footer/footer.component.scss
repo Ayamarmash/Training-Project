@@ -1,4 +1,5 @@
 @import "../../../assets/_theme";
+
 .footer{
   position: relative;
   display: flex;
@@ -7,16 +8,19 @@
   width: 100%;
   background-color: $primary-color;
 }
+
 .logoImg{
   height: 70px;
   width: 90px;
 }
+
 .logo{
   height: 30%;
   display: flex;
   justify-content: center;
   align-items: end;
 }
+
 .content{
   display: flex;
   flex-direction: column;
@@ -24,23 +28,28 @@
   align-items: center;
   padding-top: 30px;
 }
+
 .title , .subTitle, .website{
   color: white;
   margin: 0;
 }
+
 .title{
   font-weight: 500;
   font-size: calc(1.5vw + 1.5vh);
 }
+
 .subTitle{
   font-weight: 400;
   font-size: calc(1vw + 1vh);
 }
+
 .website{
   font-weight: 500;
   font-size: calc(1vw + 1.5vh);
   margin-top: 20px;
 }
+
 .socialAccounts{
   width: 100%;
   display: flex;
@@ -49,6 +58,7 @@
   align-items: center;
   margin-top: 15px;
 }
+
 button{
   display: flex;
   justify-content: center;
@@ -59,8 +69,54 @@ button{
   width: 20px;
   height: 20px;
 }
+
 .fa{
   color: $primary-color;
   text-decoration: none;
   font-weight: 700;
+}
+
+.triangle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .solid-copy{
+    position: absolute;
+    top: -50px;
+    left: 150px;
+    border-top: 20px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-left: 15px solid transparent;
+    border-right: 30px solid #448C00;
+    transform: rotate(5deg);
+  }
+
+}
+
+.circle{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  .solid-copy{
+    position: absolute;
+    top: -170px;
+    right: 200px;
+    background-color: #448C00;
+    width: 30px;
+    height: 30px;
+    border-radius: 50px;
+  }
+  .dashed-copy{
+    position: absolute;
+    top: -165px;
+    right: 190px;
+    background-color: transparent;
+    width: 25px;
+    height: 25px;
+    border-radius: 50px;
+    border: dashed white;
+  }
+
 }
