@@ -1,0 +1,53 @@
+@import "../../../assets/theme";
+.page{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: fit-content;
+  >*{
+    width: 1440px;
+  }
+}
+.contact-form{
+  position: relative;
+  margin-bottom: 50px;
+  height: 500px;
+  min-height: fit-content;
+  >*{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 10px;
+  }
+
+  input{
+    border: none;
+    height: 8%;
+    background-color: rgba(226, 231, 217, 0.37);
+    border:solid #e2e7d9;
+  }
+
+  label{
+    font-size: calc(1vw + 0.8vh);
+    font-weight: 400;
+    color: $primary-color;
+  }
+
+  .btn-field{
+    margin-top: 15px;
+    width: 10%;
+    height: 10%;
+    >*{
+      height: 100%;
+    }
+  }
+
+  #message{
+    height: 30%;
+  }
+}
+
+small{
+  color: red;
+  font-size: 1vw;
+}

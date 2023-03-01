@@ -1,4 +1,37 @@
 <div class="page">
-  <app-general-section title="CONTACT US" paragraph=""></app-general-section>
+  <app-general-section class="title" title="CONTACT US" paragraph=""></app-general-section>
+  <form class="contact-form" #form="ngForm" (ngSubmit)="onSubmit()" [formGroup]="contactEmail">
+      <label for="email">Email</label>
+      <input formControlName="email" id="email" name="email" ngModel required type="email">
 
+    <div *ngIf="contactEmail.get('email')?.errors?.['required'] && contactEmail.get('email')?.touched">
+      <small>Email Required</small>
+    </div>
+
+    <div *ngIf="contactEmail.get('email')?.errors?.['email'] && contactEmail.get('email')?.touched">
+      <small>Invalid Email</small>
+    </div>
+
+      <label for="phoneNumber">Phone Number</label>
+      <input formControlName="phoneNumber" id="phoneNumber" name="phoneNumber" ngModel required type="text">
+
+    <div *ngIf="contactEmail.get('phoneNumber')?.invalid && contactEmail.get('phoneNumber')?.touched && contactEmail.get('phoneNumber')?.value?.length != 0">
+      <small>Invalid Phone Number</small>
+    </div>
+
+      <label for="message">Message</label>
+      <input formControlName="message" id="message" name="message" ngModel required type="text">
+
+    <div *ngIf="contactEmail.get('message')?.errors?.['required'] && contactEmail.get('message')?.touched">
+      <small>Message Required</small>
+    </div>
+
+    <div *ngIf="contactEmail.get('message')?.errors?.['minlength'] && contactEmail.get('message')?.touched">
+      <small>Must be more than 50 characters</small>
+    </div>
+
+    <div class="btn-field">
+      <button type="submit" class="green main-btn">Send</button>
+    </div>
+  </form>
 </div>

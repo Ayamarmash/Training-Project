@@ -9,7 +9,7 @@ import { LandscapeComponent } from './components/landscape/landscape.component';
 import {AboutComponent} from "./sections/about/about.component";
 import {uppercase} from "./pips/uppercase-pipe";
 import {MatInputModule} from "@angular/material/input";
-import {FormsModule} from "@angular/forms";
+import {FormsModule, ReactiveFormsModule} from "@angular/forms";
 import {MatIconModule} from "@angular/material/icon";
 import { MenuComponent } from './components/menu/menu.component';
 import {ToolbarComponent} from "./components/toolbar/toolbar.component";
@@ -64,7 +64,8 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
     FormsModule,
     MatIconModule,
     MatBadgeModule,
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
