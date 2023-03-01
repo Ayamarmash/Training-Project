@@ -5,13 +5,16 @@ import {OrderPageComponent} from "./pages/order-page/order-page.component";
 import {CartPageComponent} from "./pages/cart-page/cart-page.component";
 import {FavoritePageComponent} from "./pages/favorite-page/favorite-page.component";
 import {ContactPageComponent} from "./pages/contact-page/contact-page.component";
+import {ArticlePageComponent} from "./pages/atricle-page/article-page.component";
 
 const routes: Routes = [
-  { path: '', component: HomePageComponent },
+  {path: '', component: HomePageComponent},
+  {path: 'articles/:id', component: ArticlePageComponent},
   { path: 'order', component: OrderPageComponent },
   { path: 'cart', component: CartPageComponent },
   { path: 'favorite', component: FavoritePageComponent },
   { path: 'contact', component: ContactPageComponent },
+
 ];
 
 @NgModule({

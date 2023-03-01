@@ -10,5 +10,4 @@ export class BlogCardComponent {
   @Input() Img2 = "../../assets/images/blog1.svg"
   @Input() Title : string = "Eat food. Not too much mostly plants."
   @Input() intro: string = "Lorem Ipsum available, Ipsum available, the majority have suffered alteration in some form,Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words"
-
 }

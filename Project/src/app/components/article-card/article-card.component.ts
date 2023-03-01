@@ -11,4 +11,5 @@ export class ArticleCardComponent {
   @Input() VideoSrc : string = "https://www.youtube.com/embed/7aLAeGPqHOY"
 
   @Input() left : boolean = false
+  @Input() id : number = 0;
 }
