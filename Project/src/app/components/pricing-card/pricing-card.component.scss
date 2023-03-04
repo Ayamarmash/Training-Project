@@ -55,13 +55,14 @@
 }
 .green{
   width: 40%;
+  height: 15%;
   padding: 13px 30px;
-  font-size: calc(1vw + 1vh);
+  font-size: calc(1vw + 0.5vh);
 }
 .hotPadge{
   position: absolute;
-  top: 20px;
-  left: 200px;
+  top: 8%;
+  left: 55%;
   display: flex;
   justify-content: center;
   align-items: center;

@@ -1,6 +1,4 @@
-<div class="section-container">
 <app-general-section title="Pricing"></app-general-section>
 <div class="cardsContainer">
   <app-pricing-card *ngFor="let plan of plans" plan="{{plan.plan}}" price="{{plan.price}}" [isHot]="plan.isHot"></app-pricing-card>
-</div>
 </div>
